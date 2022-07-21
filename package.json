@@ -1,0 +1,30 @@
+{
+  "name": "messenger-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/server.js",
+  "type": "module",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node ./src/server.js",
+    "watch": "forever -w ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "moment": "^2.29.4",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^4.1.0",
+    "prettier": "2.7.1"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
