@@ -12,7 +12,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1",
     "forever": "^4.0.3",
     "moment": "^2.29.4",
     "ws": "^8.8.1"
