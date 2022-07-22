@@ -4,7 +4,7 @@ import closeHandler from './handlers.js/close.js';
 import messageHandler from './handlers.js/message.js';
 import ServerModel from './server-model.js';
 
-const wss = new WebSocketServer({ port: 8080 });
+const wss = new WebSocketServer({ port: process.env.port || 7070 });
 
 const serverModel = new ServerModel(wss);
 
