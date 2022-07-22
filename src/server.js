@@ -5,7 +5,7 @@ import closeHandler from './handlers.js/close.js';
 import messageHandler from './handlers.js/message.js';
 import ServerModel from './server-model.js';
 
-const PORT = process.env.port || 7070;
+const PORT = process.env.PORT || 7070;
 const server = express();
 
 server
