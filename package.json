@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "prestart": "npm install",
-    "start": "node ./src/server.js",
+    "start": "forever ./src/server.js",
     "watch": "forever -w ./src/server.js"
   },
   "author": "",
