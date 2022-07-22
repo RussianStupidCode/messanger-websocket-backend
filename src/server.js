@@ -1,10 +1,20 @@
 /* eslint-disable import/extensions */
 import { WebSocketServer } from 'ws';
+import http from 'http';
 import closeHandler from './handlers.js/close.js';
 import messageHandler from './handlers.js/message.js';
 import ServerModel from './server-model.js';
 
-const wss = new WebSocketServer({ port: process.env.port || 7070 });
+const PORT = process.env.port || 7070;
+const server = http.createServer();
+server.on('request', (request, response) => {
+  response.write('hello');
+  response.end();
+});
+
+server.listen(PORT);
+
+const wss = new WebSocketServer({ server });
 
 const serverModel = new ServerModel(wss);
 
